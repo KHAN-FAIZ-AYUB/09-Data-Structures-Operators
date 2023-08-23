@@ -45,7 +45,6 @@ console.log(arr);
 let [main, , secondary] = restaurant.categories;
 console.log(main, secondary);
 
-
 // ***switching variables***
 
 // const temp = main;
@@ -55,7 +54,6 @@ console.log(main, secondary);
 
 [main, secondary] = [secondary, main];
 console.log(main, secondary);
-
 
 // ****Receive 2 return values from a function****
 
@@ -70,5 +68,5 @@ console.log(i, k);
 
 // ****Default values****
 
-const [p=1, q=1, r=1] = [8, 9];
+const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
