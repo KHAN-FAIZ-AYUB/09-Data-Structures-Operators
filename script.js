@@ -58,6 +58,11 @@ const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 console.log(newMenu);
 
 // ******Copy array******
+const mainMenuCopy = [...restaurant.mainMenu];
+console.log(mainMenuCopy);
+
+// ******Join 2 array******
+
 
 ///////////////////////////////////////
 // *****Destructuring Objects*****
