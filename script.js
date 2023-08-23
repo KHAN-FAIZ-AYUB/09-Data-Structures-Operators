@@ -62,7 +62,8 @@ const mainMenuCopy = [...restaurant.mainMenu];
 console.log(mainMenuCopy);
 
 // ******Join 2 array******
-
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
 
 ///////////////////////////////////////
 // *****Destructuring Objects*****
