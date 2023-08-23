@@ -31,8 +31,29 @@ const restaurant = {
   },
 };
 
-// ****Destructuring Arrays****
+///////////////////////////////////////
+// *****Destructuring Objects*****
 
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
+
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags);
+
+// ****Default Variables
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(starters);
+
+// *****Mutating Variables*****
+
+
+///////////////////////////////////////
+// ****Destructuring Arrays****
+/*
 const arr = [2, 4, 6];
 const a = arr[0];
 const b = arr[1];
@@ -70,3 +91,4 @@ console.log(i, k);
 
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
+*/
