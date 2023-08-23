@@ -78,14 +78,23 @@ console.log(...str);
 
 // *****Real world Example*****
 const ingredients = [
-  prompt("Let's make pasta! Ingreadient 1?"),
-  prompt('Ingredient 2?'),
-  prompt('Ingredient 3?'),
+  //   prompt("Let's make pasta! Ingreadient 1?"),
+  //   prompt('Ingredient 2?'),
+  //   prompt('Ingredient 3?'),
 ];
 console.log(ingredients);
 
 restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
 restaurant.orderPasta(...ingredients);
+
+// *****Object*****
+const newRestaurant = { foundedIn: 1998, ...restaurant, founder: 'Khan' };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'Ristorant Roma';
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
 
 ///////////////////////////////////////
 // *****Destructuring Objects*****
