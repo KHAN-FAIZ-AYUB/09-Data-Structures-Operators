@@ -39,6 +39,11 @@ const restaurant = {
       `Oredr received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      ` Here is your declicious pasta with ${ing1}, ${ing2} and ${ing3}`
+    );
+  },
 };
 
 ///////////////////////////////////////
@@ -70,6 +75,17 @@ const str = 'John';
 const letters = [...str, ' ', 'S.'];
 console.log(letters);
 console.log(...str);
+
+// *****Real world Example*****
+const ingredients = [
+  prompt("Let's make pasta! Ingreadient 1?"),
+  prompt('Ingredient 2?'),
+  prompt('Ingredient 3?'),
+];
+console.log(ingredients);
+
+restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+restaurant.orderPasta(...ingredients);
 
 ///////////////////////////////////////
 // *****Destructuring Objects*****
