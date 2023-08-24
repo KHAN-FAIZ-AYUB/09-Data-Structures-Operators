@@ -54,6 +54,7 @@ const restaurant = {
 ///////////////////////////////////////
 // Short Circuiting (&& and ||)
 
+console.log('---- OR ----');
 // Use ANY data type, return ANY data type, short-circuiting
 console.log(3 || 'Khan');
 console.log('' || 'Khan');
@@ -67,7 +68,14 @@ const guest1 = restaurant.numGuests ? restaurant.numGuests : 10;
 console.log(guest1);
 
 const guest2 = restaurant.numGuests || 10;
-console.log(guest2)
+console.log(guest2);
+
+console.log('---- AND ----');
+console.log(0 && 'Khan');
+console.log(7 && 'Khan');
+
+console.log('Hello' && 23 && null && 'Khan');
+
 /*
 ///////////////////////////////////////
 // Rest Pattern and Parameters
