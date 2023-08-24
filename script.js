@@ -67,6 +67,8 @@ for (const day of days) {
 }
 
 // *****Methods*****
+console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
+console.log(restaurant.orderTisotto?.(0, 1) ?? 'Method does not exist');
 
 // *****Arrays*****
 
