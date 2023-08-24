@@ -45,9 +45,7 @@ const restaurant = {
     );
   },
   orderPizza: function (mainIngredient, ...otherIngredients) {
-    console.log(
-      `here is your delicious pizza with ${mainIngredient}, ${otherIngredients}`
-    );
+    console.log(mainIngredient, otherIngredients);
   },
 };
 
@@ -76,6 +74,12 @@ console.log(7 && 'Khan');
 
 console.log('Hello' && 23 && null && 'Khan');
 
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza;
+'mushrooms', 'spinach';
 /*
 ///////////////////////////////////////
 // Rest Pattern and Parameters
