@@ -49,7 +49,6 @@ const restaurant = {
 ///////////////////////////////////////
 // Rest Pattern and Parameters
 // ****1) Destructuring*****
-
 // SPREAD because on LEFT side of =
 const arr = [1, 2, ...[3, 4]];
 
@@ -62,6 +61,10 @@ const [pizza, , risoto, ...otherFood] = [
   ...restaurant.starterMenu,
 ];
 console.log(pizza, risoto, otherFood);
+
+//*****Objects******
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(sat, weekdays);
 
 ///////////////////////////////////////
 // *****Spread Operator*****
