@@ -47,8 +47,21 @@ const restaurant = {
 };
 
 ///////////////////////////////////////
-// *****Spread Operator*****
+// Rest Pattern and Parameters
+// ****1) Destructuring*****
 
+// SPREAD because on LEFT side of =
+const arr = [1, 2, ...[3, 4]];
+
+// REST, because on LEFT side of =
+const [a, b, ...others] = [, 2, 3, 4, 5];
+console.log(a, b, others);
+
+
+
+///////////////////////////////////////
+// *****Spread Operator*****
+/*
 const arr = [7, 8, 9];
 const newBadArr = [1, 2, arr[0], arr[1], arr[2]];
 console.log(newBadArr);
@@ -95,6 +108,7 @@ const restaurantCopy = { ...restaurant };
 restaurantCopy.name = 'Ristorant Roma';
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
+*/
 
 ///////////////////////////////////////
 // *****Destructuring Objects*****
