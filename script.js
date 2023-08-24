@@ -72,8 +72,11 @@ console.log(restaurant.orderTisotto?.(0, 1) ?? 'Method does not exist');
 
 // *****Arrays*****
 const user = [{ name: 'Khan', email: 'khan@mail.io' }];
+// const user = [];
 console.log(user[0]?.name ?? 'User array empty');
 
+if (user.length > 0) console.log(user[0].name);
+else console.log('User array empty');
 /*
 ///////////////////////////////////////
 // ****The for-of Loop****
