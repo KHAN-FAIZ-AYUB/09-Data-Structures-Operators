@@ -44,6 +44,11 @@ const restaurant = {
       ` Here is your declicious pasta with ${ing1}, ${ing2} and ${ing3}`
     );
   },
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(
+      `here is your delicious pizza with ${mainIngredient}, ${otherIngredients}`
+    );
+  },
 };
 
 ///////////////////////////////////////
@@ -79,6 +84,8 @@ add(8, 2, 5, 3, 2, 4);
 const x = [23, 5, 7];
 add(...x);
 
+restaurant.orderPizza('mushroom', 'onion', 'olives', 'spinach');
+restaurant.orderPizza('chilli flex');
 ///////////////////////////////////////
 // *****Spread Operator*****
 /*
