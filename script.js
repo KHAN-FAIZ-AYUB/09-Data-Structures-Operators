@@ -57,7 +57,11 @@ const arr = [1, 2, ...[3, 4]];
 const [a, b, ...others] = [, 2, 3, 4, 5];
 console.log(a, b, others);
 
-
+const [pizza, , risoto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risoto, otherFood);
 
 ///////////////////////////////////////
 // *****Spread Operator*****
