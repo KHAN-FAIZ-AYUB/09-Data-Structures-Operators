@@ -48,6 +48,35 @@ const restaurant = {
     console.log(mainIngredient, otherIngredients);
   },
 };
+
+///////////////////////////////////////
+// Logical Assignment Operators
+const rest1 = {
+  name: 'Capri',
+  numGuests: 20,
+  // numGuests:0,
+};
+
+const rest2 = {
+  name: 'La Piazza',
+  onwer: 'Faiz',
+  // numGuests: 0,
+};
+
+// OR assignment operator
+// rest1.numGuests = rest1.numGuests || 10;
+// rest2.numGuests = rest2.numGuests || 10;
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+// Nullish assignment operator
+// rest1.numGuests ??= 10;
+// rest2.numGuests ??= 10;
+
+console.log(rest1);
+console.log(rest2);
+
+/*
 ///////////////////////////////////////
 // The Nullish Coalescing Operator
 restaurant.numGuests = 0;
@@ -58,6 +87,7 @@ console.log(guest);
 // Nullish: null and undefined (NOT 0 or '')
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect);
+*/
 
 /*
 ///////////////////////////////////////
