@@ -56,8 +56,33 @@ const restaurant = {
 };
 
 ///////////////////////////////////////
+// *****Sets*****
+
+const orderSet = new Set([
+  'Pizza',
+  'Pasta',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+console.log(orderSet);
+
+console.log(new Set('Khan'));
+
+console.log(orderSet.size);
+console.log(orderSet.has('Pizza'));
+console.log(orderSet.has('Paneer'));
+console.log(orderSet.add('Garlic bread'));
+console.log(orderSet.add('Garlic bread'));
+console.log(orderSet.delete('Risotto'));
+// orderSet.clear();
+console.log(orderSet);
+
+///////////////////////////////////////
 // Coding Challenge #2
 
+/*
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -121,6 +146,7 @@ const scorers = {};
 for (const player of game.scored) {
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
+*/
 
 /*
 ///////////////////////////////////////
