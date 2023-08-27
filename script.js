@@ -110,6 +110,12 @@ for (const odd of odds) average = average + odd;
 average = average / odds.length;
 console.log(average);
 
+// 3.
+for (const [team, odd] of Object.entries(game.odds)) {
+  const teamStr = team === 'x' ? 'Draw' : `victory ${game[team]}`;
+  console.log(`Odd of ${teamStr} ${odd}`);
+}
+
 /*
 ///////////////////////////////////////
 // ****Looping Objects: Object Keys, Values, and Entries****
