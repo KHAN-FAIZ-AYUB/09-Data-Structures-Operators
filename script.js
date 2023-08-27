@@ -56,6 +56,26 @@ const restaurant = {
 };
 
 ///////////////////////////////////////
+//*****Maps: Iteration*****
+const question = new Map([
+  ['question', 'Which is the best programming language in the world?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  ['corresct', 3],
+  [true, 'Correct'],
+  [false, 'Try Again!'],
+]);
+console.log(question);
+
+// *****Convert object to map*****
+
+// *****Quiz app*****
+
+// *****Convert map to array*****
+
+/*
+///////////////////////////////////////
 // *****Maps: Fundamentals*****
 const rest = new Map();
 rest.set('name', 'Classico Italiano');
@@ -83,6 +103,7 @@ console.log(rest);
 console.log(rest.size);
 
 console.log(rest.get(arr));
+*/
 
 ///////////////////////////////////////
 // *****Sets*****
