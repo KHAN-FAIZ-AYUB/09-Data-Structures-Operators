@@ -55,7 +55,20 @@ const restaurant = {
   },
 };
 
+///////////////////////////////////////
+// Working With Strings - Part 3
+//  *****Split and join*****
+console.log('a+very+nice+string'.split('+'));
+console.log('Khan Faiz'.split(' '));
 
+const [firstName, lastName] = 'Khan Faiz'.split(' ');
+console.log(firstName, lastName);
+
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+console.log(newName);
+
+
+/*
 ///////////////////////////////////////
 // *****Working With Strings - Part 2*****
 const airline = 'TAP Air Indigo';
@@ -70,7 +83,7 @@ const passengerCorrect =
   passengerLower[0].toUpperCase() + passengerLower.slice(1);
 console.log(passengerCorrect);
 
-/*
+
 // Comparing emails
 const email = 'hello@faiz.io';
 const loginEmail = '  Hello@Faiz.Io \n';
@@ -83,7 +96,7 @@ const normalizedEmail = loginEmail.toLowerCase().trim();
 
 console.log(normalizedEmail);
 console.log(normalizedEmail === email);
-*/
+
 
 //  ****replacing****
 const priceGB = '288,97E';
@@ -130,7 +143,7 @@ const emailCmp = function (email, loginEmail) {
   }
 };
 emailCmp('hello@khan.io', 'hello@Khan.io \n');
-
+*/
 
 /*
 ///////////////////////////////////////
