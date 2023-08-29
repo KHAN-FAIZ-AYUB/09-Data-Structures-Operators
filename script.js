@@ -63,7 +63,11 @@ console.log(airline.toLowerCase());
 console.log(airline.toUpperCase());
 
 // Fix Capitalization in name
-
+const passenger = 'kHaN'; //Khan
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
 /*
 ///////////////////////////////////////
 //******Working With Strings - Part 1******
