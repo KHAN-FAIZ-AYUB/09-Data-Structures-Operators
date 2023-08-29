@@ -68,6 +68,20 @@ const passengerLower = passenger.toLowerCase();
 const passengerCorrect =
   passengerLower[0].toUpperCase() + passengerLower.slice(1);
 console.log(passengerCorrect);
+
+// Comparing emails
+const email = 'hello@faiz.io';
+const loginEmail = '  Hello@Faiz.Io \n';
+
+// const lowerEmail = loginEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+// console.log(trimmedEmail);
+
+const normalizedEmail = loginEmail.toLowerCase().trim();
+
+console.log(normalizedEmail);
+console.log(normalizedEmail === email);
+
 /*
 ///////////////////////////////////////
 //******Working With Strings - Part 1******
