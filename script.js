@@ -83,6 +83,23 @@ console.log(normalizedEmail);
 console.log(normalizedEmail === email);
 
 /*
+//  ******test function********
+const strCmp=emailComp(a,b) 
+{
+  (email===normalizedEmail) => 'matched':'Not matched'
+}
+  ('Email dosent match')
+
+strCmp(email,normalizedEmail)
+
+console.log(strCmp)
+*/
+
+//  replacing
+
+
+
+/*
 ///////////////////////////////////////
 //******Working With Strings - Part 1******
 const airline = 'TAP Air Indigo';
