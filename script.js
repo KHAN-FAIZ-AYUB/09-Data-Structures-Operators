@@ -56,7 +56,17 @@ const restaurant = {
 };
 
 ///////////////////////////////////////
-//******/ Working With Strings - Part 1******
+// *****Working With Strings - Part 2*****
+const airline = 'TAP Air Indigo';
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+// Fix Capitalization in name
+
+/*
+///////////////////////////////////////
+//******Working With Strings - Part 1******
 const airline = 'TAP Air Indigo';
 const plane = 'A320';
 
@@ -96,6 +106,7 @@ console.log(new String('Khan'));
 console.log(typeof new String('Khan'));
 
 console.log(typeof new String('Khan').slice(1));
+*/
 
 /*
 ///////////////////////////////////////
