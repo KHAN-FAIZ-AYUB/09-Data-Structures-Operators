@@ -116,6 +116,20 @@ if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
   console.log('Part of the new Airbus family');
 }
 
+// Practical exercise
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+
+  if (baggage.includes('knife') || baggage.includes('gun')) {
+    console.log('You are NOT allowed on board');
+  } else {
+    console.log('Welcome on board');
+  }
+};
+checkBaggage('Ihave a laptop, some food and a pocket Knife');
+checkBaggage('Socks and camera');
+checkBaggage('Got some snacks and a gun for protection');
+
 /*
 ///////////////////////////////////////
 //******Working With Strings - Part 1******
