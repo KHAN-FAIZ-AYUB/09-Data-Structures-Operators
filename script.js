@@ -67,7 +67,23 @@ console.log(firstName, lastName);
 const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
 console.log(newName);
 
+const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const nameUpper = [];
+  // console.log(names)
+  for (const n of names) {
+    // nameUpper.push(n[0].toUpperCase() + n.slice(1));
+    nameUpper.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(nameUpper.join(' '));
+};
+capitalizeName('jessica ann smith davis');
+capitalizeName('khan faiz ayub');
 
+// *****Padding*****
+const message = 'Got to gate 23';
+console.log(message.padStart(20, '@').padEnd(30, '@'));
+console.log('Khan'.padStart(20, '+').padEnd(30, '+'));
 /*
 ///////////////////////////////////////
 // *****Working With Strings - Part 2*****
