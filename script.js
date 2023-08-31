@@ -84,6 +84,26 @@ capitalizeName('khan faiz ayub');
 const message = 'Got to gate 23';
 console.log(message.padStart(20, '@').padEnd(30, '@'));
 console.log('Khan'.padStart(20, '+').padEnd(30, '+'));
+
+const maskCreditCard = function (number) {
+  const str = number + '';
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+};
+console.log(maskCreditCard(12665656464684));
+
+// **** Repeat****
+const message2 = 'Bad weather... All Departues Delayed... ';
+console.log(message2.repeat(5));
+
+const planesInLine = function (n) {
+  console.log(`There are ${n} planes in line ${'🛬'.repeat(n)}`);
+};
+planesInLine(5);
+planesInLine(10);
+planesInLine(12);
+
+
 /*
 ///////////////////////////////////////
 // *****Working With Strings - Part 2*****
